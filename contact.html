@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contact Page</title>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,600i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="page-header">
+            <img class="website-logo page-header__item" src="img/Holan-Gultom-Logo.png" alt="My website logo with Holan Gultom written in black on a white background.">
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="work.html" role="menuitem" class="navigation-list__item">My work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div style="text-align: center;" class="main__content">
+            <h1>Contact</h1>
+            <div>
+                Holan Gultom<br> 
+                Address Line<br> 
+                Postal Code / City<br> 
+                Country<br>
+                <br> 
+                Telephone: <a href="tel:+4912345678900">(+49) 176 12348900</a><br>
+                Email Address: <a href="mailto:hollan.gultom@gmail.com">hollan.gultom@gmail.com</a>
+            </div>
+            <br>
+            <a href="mailto:hollan.gultom@gmail.com" style="font-size: 28px; font-weight: 600;">Contact me now!</a>
+            <br>
+            <br>
+            <form action="" method="post" id="contact-form">
+                <label class="contact_form_input" for="email-box">E-mail: </label>
+                <input placeholder="email@domain.com" type="email" id="email-box" required>
+              
+                <label class="contact_form_input" for="telephone-box">Telephone: </label>
+                <input placeholder="333-333-4444" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone-box">
+                
+                <label class="contact_form_input" for="message-box">Message: </label>
+                <textarea required maxlength="250" id="message-box"></textarea>
+                  
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+        <footer class="page-footer">         
+            <p style="margin: 5px;">Find me on</p>
+            <div class="social-media">
+                <a href="https://www.github.com" target="_blank"><img width="30px" height="30px" src="img/github_icon.svg" alt="github"></a>
+                <a href="https://www.twitter.com" target="_blank"><img width="30px" height="30px" src="img/twitter_icon.svg" alt="twitter"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img width="30px" height="30px" src="img/linkedin_icon.svg" alt="linkedin"></a>
+            </div>
+        </footer>
+
+        <script src="js/tota11y.min.js"></script>
+    </body>
+<html>
