@@ -5,8 +5,14 @@
     --gray-blue: #CDD0D1;
     --header-footer-color: #AEC7DA;
     --nav-button: #57a8e6;
+    --dropdown-background: #F9F9F9;
     --backup-color-one: #277EC1;
     --backup-color-two: #0370C4;
+    --big-padding: 100px;
+    --medium-padding: 50px;
+    --small-padding: 10px;
+    --button-radius: 3px;
+    --default-font-weight: 600;
 }
 
 * {
@@ -38,7 +44,7 @@ body {
 }
 
 .website-logo {
-    padding-left: 50px;
+    padding-left: var(--medium-padding);
     height: 80px;
     width: auto;
 }
@@ -48,7 +54,7 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
-    padding-right: 50px;
+    padding-right: var(--medium-padding);
 }
 
 .page-header__item:last-child {
@@ -56,7 +62,7 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
-    padding-right: 50px;
+    padding-right: var(--medium-padding);
 }
 
 .navigation-list {
@@ -66,9 +72,9 @@ body {
 .navigation-list li, .mobile-dropdown__button {
     display: inline-block;
     margin-left: 15px;
-    padding: 10px;
+    padding: var(--small-padding);
     background-color: var(--nav-button);
-    border-radius: 3px;
+    border-radius: var(--button-radius);
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
@@ -101,7 +107,7 @@ body {
     display: none;
     position: absolute;
     right: 50px;
-    background-color: #f9f9f9;
+    background-color: var(--dropdown-background);
     min-width: 160px;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -143,14 +149,14 @@ body {
 }
 
 .work-page__section {
-    padding-bottom: 100px;
+    padding-bottom: var(--big-padding);
 }
 
 .profile, .main__content {
     padding-top: 150px;
     max-width: 850px;
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: var(--big-padding);
 }
 
 .main__content {
@@ -167,19 +173,19 @@ body {
 
 h1 {
     color: var(--text-color);
-    font-weight: 600;
+    font-weight: var(--default-font-weight);
     font-size: 32px;
 }
 
 h2 {
     color: var(--text-color);
-    font-weight: 600;
+    font-weight: var(--default-font-weight);
     font-size: 28px;
 }
 
 h3 {
     color: var(--text-color);
-    font-weight: 600;
+    font-weight: var(--default-font-weight);
     font-size: 24px;
 }
 
@@ -211,8 +217,8 @@ a:active {
     background-color: var(--light-orange);
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
+    padding: var(--small-padding);
+    border-radius: var(--button-radius);
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     -webkit-transition: opacity, color 0.2s;
     -o-transition: opacity, color 0.2s;
