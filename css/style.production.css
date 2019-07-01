@@ -110,6 +110,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 70px;
     right: 50px;
     background-color: var(--dropdown-background);
     min-width: 160px;
