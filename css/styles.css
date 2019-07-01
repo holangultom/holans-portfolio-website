@@ -94,6 +94,10 @@ body {
     overflow: hidden;
 }
 
+#mobile-navigation__menubar {
+    list-style-type: none;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
