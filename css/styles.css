@@ -161,6 +161,18 @@ body {
     border-radius: 50%;
 }
 
+.hobbies-list {
+    list-style-type: none;
+    margin-left: -40px;
+    padding: none;
+}
+
+.hobbies {
+    background-color: var(--light-orange);
+    width: 400px;
+    margin: auto;
+}
+
 h1 {
     color: var(--text-color);
     font-weight: var(--default-font-weight);
@@ -273,6 +285,19 @@ table, th {
         display: flex;
         flex-shrink: 1;
     }
+
+    .hobbies-list {
+        list-style-type: none;
+        margin-left: -45px;
+        padding: none;
+    }
+    
+    .hobbies {
+        background-color: var(--light-orange);
+        max-width: 350px;
+        margin: auto;
+    }
+
 }
 @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
