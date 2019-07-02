@@ -242,10 +242,17 @@ table {
     border-spacing: 10px;
     text-align: center;
     margin: auto;
+    background-color: var(--backup-color-one);
 }
 
 table, th {
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+th {
+    background-color: var(--light-orange);
+    padding: 3px 13px;
 }
 
 .grid {
@@ -312,6 +319,13 @@ table, th {
         margin: auto;
     }
 
+    table {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        flex-grow: 0;
+        border-spacing: 3px;
+    }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
