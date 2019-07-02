@@ -158,9 +158,12 @@ body {
 }
 
 .profile, .main__content {
-    padding-top: 150px;
+    display: block;
     max-width: 850px;
     margin: auto;
+    padding-top: 150px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: var(--big-padding);
 }
 
@@ -174,6 +177,18 @@ body {
     max-width: 250px;
     margin-right: 40px;
     border-radius: 50%;
+}
+
+.hobbies-list {
+    list-style-type: none;
+    margin-left: -40px;
+    padding: none;
+}
+
+.hobbies {
+    background-color: var(--light-orange);
+    width: 400px;
+    margin: auto;
 }
 
 h1 {
@@ -246,10 +261,17 @@ table {
     border-spacing: 10px;
     text-align: center;
     margin: auto;
+    background-color: var(--backup-color-one);
 }
 
 table, th {
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+th {
+    background-color: var(--light-orange);
+    padding: 3px 13px;
 }
 
 .grid {
@@ -303,6 +325,50 @@ table, th {
         display: flex;
         -ms-flex-negative: 1;
             flex-shrink: 1;
+    }
+
+    .profile__portrait {
+        float: none;
+        margin: auto;
+    }
+
+    .profile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .hobbies-list {
+        list-style-type: none;
+        margin-left: -45px;
+        padding: none;
+    }
+    
+    .hobbies {
+        background-color: var(--light-orange);
+        max-width: 350px;
+        margin: auto;
+    }
+
+    table {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        border-spacing: 3px;
     }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
@@ -517,14 +583,9 @@ table, th {
     resize: none;
 }
 
-.contact-input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 300px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+.input-box {
+    max-width: 196px;
+    max-height: 26px;
 }
 
 .contact-boxes {
@@ -541,4 +602,14 @@ table, th {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+}
+
+.contact-input {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
