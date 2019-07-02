@@ -266,6 +266,13 @@ table, th {
     .grid {
       grid-template-columns: 1fr;
     }
+
+    .berlin-illustration {
+        width: 100%;
+        max-height: 300px;
+        display: flex;
+        flex-shrink: 1;
+    }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
@@ -321,7 +328,7 @@ table, th {
         transform: translate(0, 0)
     }
     100% {
-        transform: translate(0, 600px);
+        transform: translate(0, 400px);
     }
 }
 
