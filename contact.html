@@ -60,8 +60,12 @@
             <form action="URL" method="post" id="contact-form">
                 <div class="contact-boxes">
                     <div class="contact-input">
+                        <label for="email-box">E-mail: </label>
+                        <input class="input-box" placeholder="email@domain.com" type="email" id="email-box" required>
                     </div>
                     <div class="contact-input">
+                        <label for="telephone-box">Telephone: </label>
+                        <input class="input-box" placeholder="333-333-4444" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone-box">
                     </div>
                     <div>
                         <label for="message-box"></label>

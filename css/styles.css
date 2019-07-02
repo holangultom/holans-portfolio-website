@@ -422,10 +422,9 @@ table, th {
     resize: none;
 }
 
-.contact-input {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
+.input-box {
+    max-width: 196px;
+    max-height: 26px;
 }
 
 .contact-boxes {
@@ -434,4 +433,10 @@ table, th {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.contact-input {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 }
