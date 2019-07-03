@@ -338,11 +338,11 @@ th {
     }
 
     table {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 1;
-        flex-grow: 0;
+        display: table;
         border-spacing: 3px;
+        text-align: center;
+        margin: auto;
+        background-color: var(--backup-color-one);
     }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
